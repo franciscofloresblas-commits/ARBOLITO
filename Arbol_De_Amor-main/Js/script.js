@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `PARA PEQUE..:\n\nSé que no te fijaras en mi , pero me huibier gustado haberte demostrado que no solo es un gusto.\n\nDe cualquier modo es lindo saber que puedo conocer gente similar a ti.\n\nPero definitivamnete eres especial en muchos sentidos,ceuntas conmigo y mas aun para lograr tus metas, solo no te olvides que existo jsjsj.`;  } else {
+    text = `PARA PEQUE..:\n\nSé que no te fijaras en mi , pero me huibier gustado haberte demostrado que no solo es un gusto.\n\nDe cualquier modo es lindo saber que puedo conocer gente similar a ti.\n\nPero definitivamnete eres especial en muchos sentidos,cuentas conmigo y mas aun para lograr tus metas, solo no te olvides que existo jsjsj.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -146,8 +146,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2025-03-01T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2027-03-01T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2025-03-07T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2027-03-07T00:00:00');
 
   function update() {
     const now = new Date();
